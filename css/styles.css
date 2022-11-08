@@ -47,6 +47,18 @@ body {
     letter-spacing: 0.03em;
 
 }
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 /* header */
 .header {
  border: 1px solid rgba(236, 236, 236, 1);
@@ -58,12 +70,6 @@ body {
 .logo {
     font-family:'Raleway',cursive;
 text-decoration: none;
-}
-.button-page {
-    display:flex;
-}
-.section-tasks {
-    padding-bottom: 94px;
 }
 
 .logo-link {
@@ -230,18 +236,7 @@ background-color: var(--focus-button);
       padding-top: 94px;
       padding-bottom: 94px;
   }
- .visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-  }
+ 
 .section-title{
 color:var(--color-link);
 line-height: 1.17;
@@ -270,6 +265,9 @@ margin-bottom: 10px;
     width: 270px;
 }
 /* section-tasks */
+.section-tasks {
+    padding-bottom: 94px;
+}
 .section-headlines {
     color: var(--color-link);
     font-size: 36px;
