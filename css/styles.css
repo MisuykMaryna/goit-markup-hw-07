@@ -92,7 +92,7 @@ padding: 25px 0;
     margin-bottom: 0;
     gap: 50px;
 }
-    .menu-link {
+    .menu__link {
 color:var(--color-link);
     font-weight:500;
     line-height: 1.17;
@@ -106,18 +106,20 @@ color:var(--color-link);
      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-.menu-link:hover, .current
-.menu-link:focus, .current {
+.menu__link--current:hover,
+.menu__link--current:focus {
  color: var(--accent-color);
 }
-
-.menu-link.current:hover::after {
+.menu__link--current {
+color: var(--accent-color);
+}
+.menu__link--current:hover::after {
     color: var(--accent-color);
 }
-.menu-link.current:focus::after {
+.menu__link--current:focus::after {
     color: var(--accent-color);
 }
-.menu-link.current::after {
+.menu__link--current::after {
     position: absolute;
     display: block;
     width: 100%;
@@ -128,7 +130,7 @@ color:var(--color-link);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     content:"";
 }
-.menu-list{
+.menu__list{
     position: relative;
 }
 .header-link{
@@ -320,7 +322,7 @@ margin-bottom: 10px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.photo-heading {
+.photo__heading {
  color: var(--color-link);
 font-weight: 500;
 font-size: 16px;
@@ -331,7 +333,7 @@ margin-top: 0;
     display: flex;
     gap: 30px;
 }
-.photo-lead {
+.photo__lead {
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
@@ -340,29 +342,29 @@ margin-top: 0;
     padding-bottom: 0;
     align-items: center;
 }
-.photo-card {
+.photo__card {
     text-align: center;
     padding:30px;   
     }
 
-.photo-list {
+.photo__list {
     background-color: var(--color-caption);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
             0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
 }
-.photo-icon {
+.photo__icon {
 fill: var(--icon-color);
 }
-.photo-social{
+.photo__social{
 display: flex;
 justify-content:center;
 align-items:center;
 gap:10px;
 margin-top:16px;
 }
-.photo-link{
+.photo__link{
     display:flex;
     justify-content:center;
     align-items:center;
@@ -376,16 +378,16 @@ margin-top:16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.photo-link:hover,
-.photo-link:focus {
+.photo__link:hover,
+.photo__link:focus {
     background-color: var(--accent-color);
 }
 
-.photo-link:hover .photo-icon {
+.photo__link:hover .photo__icon {
     fill: var(--color-caption);
 }
 
-.photo-link:focus .photo-icon {
+.photo__link:focus .photo__icon {
     fill: var(--color-caption);
 }
 
