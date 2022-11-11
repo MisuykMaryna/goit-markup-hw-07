@@ -1,9 +1,14 @@
 @import "./utils/base";
 @import "./utils/variables";
+@import "./utils/utils";
 
+@import"./components/element";
+@import "./components/footer";
 @import "./components/header";
 @import "./components/hero";
-@import "./components/page";
 @import "./components/photo";
+@import "./components/portfolio";
+@import "./components/portrait";
 @import "./components/section";
+@import "./components/smart";
 @import "./components/specialization";

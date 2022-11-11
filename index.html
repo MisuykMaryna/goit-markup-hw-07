@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"/
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
         <link rel="stylesheet" href="./css/main.min.css"/>
         <link rel="stylesheet" href="./css/styles.css"/>
@@ -86,7 +86,7 @@
         </section>
         <section class="specialization">
             <div class="container">
-            <h2 class="section-headlines">Чим ми займаємося</h2>
+            <h2 class="title section-specialization">Чим ми займаємося</h2>
             <ul class="specialization__list">
                 <li><div class="specialization__card">
                     <img src="./images/typing.jpg" alt="Написання коду" width="370">
@@ -108,7 +108,7 @@
         </section>
         <section class="portrait">
             <div class="container">
-            <h2 class="section-headlines">Наша команда</h2>
+            <h2 class="title section-portrait">Наша команда</h2>
             <ul class="photo">
                 <li class="photo__list"><img src="./images/igor.jpg" alt="чоловік в окулярах посміхається" width="270">
                     <div class="photo__card">
@@ -227,7 +227,7 @@
         </section>
         <section class="element" >
             <div class="container">
-                <h2 class="section-headlines">Постійні клієнти</h2>
+                <h2 class="title section-element">Постійні клієнти</h2>
                 <ul class="smart">
                 <li>
                     <a href="#" class="smart__icon"><svg width="106" height="60">
@@ -269,56 +269,60 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container footer-section">
+<footer class="footer">
+    <div class="container footer__section">
         <div class="container-box">
             <div>
-        <a class="link-logo" href="./index.html">Web<span class="footer-span">Studio</span></a>
-        <address>
-            <ul class="address-link">
-                <li class="services"><a class="footer-address" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
-                        rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі
-                        Українки, 26</a></li>
-                <li class="services"><a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="services"><a class="footer-link" href="tel:+380961111111">+380961111111</a></li>
-            </ul>
-        </address>
+                <a class="logo footer__logo" href="./index.html">Web<span
+                        class="logo footer__logo--color">Studio</span></a>
+                <address>
+                    <ul class="footer__contact">
+                        <li class="footer__connection"><a class="footer__address"
+                                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                                rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі
+                                Українки, 26</a></li>
+                        <li class="footer__connection"><a class="footer__link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="footer__connection"><a class="footer__link"
+                                href="tel:+380961111111">+380961111111</a></li>
+                    </ul>
+                </address>
         </div>
-<div class="footer-social">
-    <h2 class="footer-title">Приєднуйтесь</h2>
+<div class="footer__social">
+    <h2 class="footer__title">Приєднуйтесь</h2>
     <ul class="social">
     <li>
-        <a href="#" class="social-link"> 
-    <svg width="20" height="20" class="social-icon">
+        <a href="#" class="social__link"> 
+    <svg width="20" height="20" class="social__icon">
         <use href="./images/icons.svg#icon-instagram"></use>
     </svg></a></li>
     <li>
-        <a href="#" class="social-link">
-<svg width="20" height="20" class="social-icon">
+        <a href="#" class="social__link">
+<svg width="20" height="20" class="social__icon">
         <use href="./images/icons.svg#icon-twitter"></use>
     </svg></a></li>
     <li>
-        <a href="#" class="social-link">
-<svg width="20" height="20" class="social-icon">
+        <a href="#" class="social__link">
+<svg width="20" height="20" class="social__icon">
         <use href="./images/icons.svg#icon-facebook"></use>
     </svg></a></li>
     <li>
-        <a href="#" class="social-link">
-<svg width="20" height="20" class="social-icon">
+        <a href="#" class="social__link">
+<svg width="20" height="20" class="social__icon">
         <use href="./images/icons.svg#icon-linkedin"></use>
 </svg></a></li>
 </ul>
 </div>
         </div>
         <div>
-            <p class="footer-title">Підпишіться на розсилку</p>
-            <form name="footer-form">
-                <div class="footer-writing">
+            <p class="footer__title">Підпишіться на розсилку</p>
+            <form name="footer__form">
+                <div class="footer__writing">
                 <label for="email-name"></label>
-                <input class="footer-input" id="email-name" type="email" 
+                <input class="footer__input" id="email-name" type="email" 
                 name="email-name" placeholder="E-mail"/>
             <button type="submit" class="footer-button">Підписатися
-                <svg width="24" height="24" class="footer-icon">
+                <svg width="24" height="24" class="footer__icon">
         <use href="./images/icons.svg#icon-telegram-1"></use>
     </svg>
             </button>
@@ -363,7 +367,7 @@
                 <label class="checkbox-label">
                 <input class="checkbox-input" 
                 type="checkbox" name="terms-checkbox" />
-                <span class="icon"><svg width="16" height="15" class="checkbox-icon">
+                <span class="icon"><svg width="15" height="14" class="checkbox-icon">
                     <use href="./images/icons.svg#icon-icon-check-1"></use>
                 </svg></span>
                 Погоджуюся з розсилкою та приймаю
