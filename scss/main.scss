@@ -1,14 +1,18 @@
 @import "./utils/base";
-@import "./utils/variables";
 @import "./utils/utils";
+@import "./utils/variables";
 
-@import "./components/element";
-@import "./components/footer";
+
 @import "./components/header";
 @import "./components/hero";
-@import "./components/photo";
-@import "./components/portfolio";
-@import "./components/portrait";
+@import "./components/primary-button";
 @import "./components/section";
-@import "./components/smart";
 @import "./components/specialization";
+@import "./components/portrait";
+@import "./components/photo";
+@import "./components/element";
+@import "./components/smart";
+@import "./components/social";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/portfolio";

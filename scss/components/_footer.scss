@@ -51,7 +51,12 @@
     flex-direction: column;
 }
 
-/* social */
+.container-box {
+    display: flex;
+    align-items: baseline;
+    gap: 86.9px;
+
+}
 .footer__social {
     display: flex;
     flex-direction: column;
