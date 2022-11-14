@@ -1,12 +1,10 @@
 .smart {
     display: flex;
     gap: 30px;
-}
 
-.smart__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+&__icon {
+    @extend %flex-centered;
     width: 170px;
     height: 92px;
     align-items: center;
@@ -22,8 +20,9 @@
 
 }
 
-.smart__icon:hover,
-.smart__icon:focus {
+&__icon:hover,
+&__icon:focus {
     fill: var(--accent-color);
     border: 1px solid #2196F3;
+}
 }

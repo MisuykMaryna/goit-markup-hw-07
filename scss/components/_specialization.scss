@@ -1,23 +1,21 @@
 .specialization {
     padding-bottom: 94px;
-}
 
-.specialization__list {
+
+&__list {
     display: flex;
     justify-content: center;
     gap: 30px;
     position: relative;
 }
 
-.specialization__card {
+&__card {
     position: relative;
     width: 370px;
 }
 
-.specialization__content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+&__content {
+    @extend %flex-centered;
     position: absolute;
     content: "";
     top: 224px;
@@ -30,9 +28,10 @@
 
 }
 
-.specialization__text {
+&__text {
     color: rgba(255, 255, 255, 1);
     font-weight: 700;
     line-height: 1.17;
     text-transform: uppercase;
+}
 }
